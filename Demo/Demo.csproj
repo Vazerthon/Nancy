@@ -56,13 +56,15 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Views\HomePage.sshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\HomePageModel.cs" />
     <Compile Include="Modules\App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Contracts\IMessageService.cs" />
-    <Compile Include="Services\Implementations\MessageService.cs" />
+    <Compile Include="Services\Contracts\IModelService.cs" />
+    <Compile Include="Services\Implementations\ModelService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

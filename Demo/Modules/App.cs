@@ -5,9 +5,17 @@ namespace Demo.Modules
 {
     public class App : NancyModule
     {
-        public App(IMessageService messageService)
+        readonly IModelService modelService;
+
+        public App(IModelService modelService)
         {
-            Get["/"] = parameters => messageService.SayHello();
+            this.modelService = modelService;
+            ConfigureRoutes();
+        }
+
+        void ConfigureRoutes()
+        {
+            Get["/"] = _ => View[modelService.GetHomePageModel()];
         }
     }
 }
