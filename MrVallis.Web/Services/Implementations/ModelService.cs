@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using Demo.Models;
-using Demo.Services.Contracts;
+using MrVallis.Web.Models;
+using MrVallis.Web.Services.Contracts;
 
-namespace Demo.Services.Implementations
+namespace MrVallis.Web.Services.Implementations
 {
     public class ModelService : IModelService
     {
-        const string CommonPageTitlePostfix = "| Nancy Demo";
+        const string CommonPageTitlePostfix = "| MrVallis";
 
         public HomePageModel GetHomePageModel()
         {

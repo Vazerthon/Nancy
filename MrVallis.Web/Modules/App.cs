@@ -1,7 +1,7 @@
-﻿using Demo.Services.Contracts;
+﻿using MrVallis.Web.Services.Contracts;
 using Nancy;
 
-namespace Demo.Modules
+namespace MrVallis.Web.Modules
 {
     public class App : NancyModule
     {

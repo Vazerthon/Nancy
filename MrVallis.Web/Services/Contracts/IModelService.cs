@@ -1,6 +1,6 @@
-﻿using Demo.Models;
+﻿using MrVallis.Web.Models;
 
-namespace Demo.Services.Contracts
+namespace MrVallis.Web.Services.Contracts
 {
     public interface IModelService
     {

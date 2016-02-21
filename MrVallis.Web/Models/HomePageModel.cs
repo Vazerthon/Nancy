@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Demo.Models
+namespace MrVallis.Web.Models
 {
     public class HomePageModel
     {
