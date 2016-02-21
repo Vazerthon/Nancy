@@ -1,4 +1,5 @@
 ﻿using Nancy;
+using SquishIt.Framework;
 
 namespace MrVallis.Web.Modules
 {
@@ -6,7 +7,10 @@ namespace MrVallis.Web.Modules
     {
         public App()
         {
-            Get["/"] = _ => View;
+            Get["/"] = _ => View["Home", new
+            {
+                JsBundle = Bundle.JavaScript().RenderNamed("js")
+            }];
         }
     }
 }
