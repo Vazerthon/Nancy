@@ -1,21 +1,12 @@
-﻿using MrVallis.Web.Services.Contracts;
-using Nancy;
+﻿using Nancy;
 
 namespace MrVallis.Web.Modules
 {
     public class App : NancyModule
     {
-        readonly IModelService modelService;
-
-        public App(IModelService modelService)
+        public App()
         {
-            this.modelService = modelService;
-            ConfigureRoutes();
-        }
-
-        void ConfigureRoutes()
-        {
-            Get["/"] = _ => View[modelService.GetHomePageModel()];
+            Get["/"] = _ => View;
         }
     }
 }

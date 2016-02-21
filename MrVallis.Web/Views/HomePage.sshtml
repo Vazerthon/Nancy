@@ -1,14 +1,10 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="mrvallis">
 <head>
-    <title>@Model.Title</title>
+    <title>Mr Vallis</title>
 	<meta charset="utf-8" />
 </head>
-<body>
-    <ul>
-        @Each.Items
-            <li>@Current</li>
-        @EndEach
-    </ul>
+<body ng-view>
+    
 </body>
 </html>
